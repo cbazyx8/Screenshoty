@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    background: linear-gradient(45deg, #0f0c29, #302b63, #24243e);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    border: 2px solid #00ff99;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 0 15px #00ff99;
+    max-width: 80%;
+    margin: 20px;
+}
+
+.neon {
+    font-size: 2em;
+    color: #00ff99;
+    text-shadow: 0 0 5px #00ff99, 0 0 10px #00ff99, 0 0 20px #00ff99, 0 0 40px #00ff99;
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.image-preview {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #00ff99;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #00ff99;
+}
+
+.neon-button {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #00ff99;
+    background-color: #000;
+    border: 2px solid #00ff99;
+    border-radius: 5px;
+    cursor: pointer;
+    text-shadow: 0 0 5px #00ff99, 0 0 10px #00ff99;
+    transition: box-shadow 0.3s ease;
+}
+
+.neon-button:hover {
+    box-shadow: 0 0 20px #00ff99, 0 0 30px #00ff99;
+}
+
+/* Style for file input button */
+.file-input {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #00ff99;
+    background-color: #000;
+    border: 2px solid #00ff99;
+    border-radius: 5px;
+    cursor: pointer;
+    text-shadow: 0 0 5px #00ff99, 0 0 10px #00ff99;
+    transition: box-shadow 0.3s ease;
+}
+
+.file-input input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
